@@ -25,3 +25,12 @@ document.getElementById("donationForm").addEventListener("submit", function(even
 });
 
 alert("Spende erfolgreich!");
+
+let list = document.getElementById("donationList");
+let entry = document.createElement("li");
+
+entry.innerText = name + " hat " + item + " gespendet.";
+list.appendChild(entry);
+
+// Reset form after success
+document.getElementById("donationForm").reset();
