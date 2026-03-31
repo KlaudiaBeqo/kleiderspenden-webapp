@@ -2,34 +2,27 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Kleiderspenden Registrierung</title>
+    <title>Kleiderspenden</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Kleiderspenden Registrierung</h1>
-</header>
+<h1>Kleiderspende Formular</h1>
 
-<main>
-    <form id="donationForm">
-        <label>Name:</label>
-        <input type="text" id="name" required>
+<form id="donationForm">
+    <label>Name:</label><br>
+    <input type="text" id="name" required><br><br>
 
-        <label>Postleitzahl:</label>
-        <input type="text" id="plz" required>
+    <label>E-Mail:</label><br>
+    <input type="email" id="email" required><br><br>
 
-        <label>Kleidungsart:</label>
-        <select id="type">
-            <option>Winterkleidung</option>
-            <option>Sommerkleidung</option>
-        </select>
+    <label>Kleidungsstück:</label><br>
+    <input type="text" id="item" required><br><br>
 
-        <button type="submit">Absenden</button>
-    </form>
+    <button type="submit">Spenden</button>
+</form>
 
-    <p id="message"></p>
-</main>
+<p id="message"></p>
 
 <script src="script.js"></script>
 </body>
