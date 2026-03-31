@@ -23,3 +23,5 @@ document.getElementById("donationForm").addEventListener("submit", function(even
     message.style.color = "green";
     message.innerText = "Danke " + name + "! Deine Spende wurde erfolgreich registriert.";
 });
+
+alert("Spende erfolgreich!");
